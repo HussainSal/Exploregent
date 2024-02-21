@@ -1,0 +1,53 @@
+.container {
+  background-color: white;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+
+  display: flex;
+  border-radius: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 80px auto;
+  max-width: 1600px;
+  //   margin: auto;
+
+  .heading {
+    margin-top: 50px;
+  }
+
+  .seoCardSection {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    .seoCardSection {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    .seoCardSection {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    .seoCardSection {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

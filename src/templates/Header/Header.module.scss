@@ -1,0 +1,142 @@
+.header {
+  padding: 0 80px;
+  margin-top: 40px;
+}
+.innerContainer {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  padding: 40px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.textContainer {
+  max-width: 675px;
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  margin-bottom: 20px;
+  color: #0a56f1;
+  max-width: 570px;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.textContainer button {
+  margin-top: 40px;
+  width: max-content;
+}
+
+.callIcon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.callIcon img {
+  width: 20px;
+}
+
+.image {
+  position: absolute;
+  right: 0;
+}
+
+.image > img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1360px) {
+  .innerContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    .image {
+      position: relative;
+      left: 0;
+    }
+  }
+
+  .textContainer {
+    max-width: 675px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading {
+    margin-bottom: 20px;
+    color: #e68f50;
+    max-width: 570px;
+  }
+
+  .descriptionContainer {
+    p {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+  .innerContainer {
+    padding: 15px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    .image {
+      position: relative;
+      left: 0;
+    }
+  }
+
+  .textContainer {
+    max-width: 675px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading {
+    margin-bottom: 20px;
+    color: #e68f50;
+    max-width: 570px;
+  }
+
+  .descriptionContainer {
+    p {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .descriptionContainer {
+    padding: 0px 16px;
+  }
+}

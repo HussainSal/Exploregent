@@ -1,0 +1,16 @@
+.headerImg {
+  transform: translateX(80px);
+  max-width: 672px;
+  width: 100%;
+}
+
+.headingContainer {
+  text-align: center;
+  margin: 80px auto 60px auto;
+}
+
+@media (max-width: 1360px) {
+  .headerImg {
+    transform: translateX(0px);
+  }
+}

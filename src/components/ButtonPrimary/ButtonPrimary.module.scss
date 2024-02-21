@@ -1,0 +1,27 @@
+.btn {
+  font-size: 25px;
+  font-weight: 600;
+  background-color: #e68f50;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.btn:hover {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 576px) {
+  .btn {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
